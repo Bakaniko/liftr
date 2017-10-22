@@ -2,6 +2,7 @@
 %% Classe de rapport pédagogique v3
 %%
 %% Vincent Labatut 2014-2016
+%% Nicolas Roelandt 2017
 %%
 %% v1   - 10/2014 : forme de rapport très différente
 %% v2   - 02/2015 : modèle complètement refait
@@ -11,6 +12,7 @@
 %% v2.4 - 12/2015 : diverses modifications du contenu du document
 %% v3   - 01/2016 : définition de la classe latex
 %% V4.0 - 04/2017 : personnalisation pour projet télédétection
+%% V4.5 - 10/2017 : liftr customisation
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % init class
