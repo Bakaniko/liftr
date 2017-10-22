@@ -30,6 +30,7 @@ sansfont: Linux Biolinum O
 maincolor: rstudioblue
 fontsize: 11pt
 lang: fr
+tocname: Sommaire
 liftr:
   from: "rocker/tidyverse:latest"
   maintainer: "Nan Xiao"

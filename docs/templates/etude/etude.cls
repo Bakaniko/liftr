@@ -137,6 +137,7 @@
 
 % macros allowing to set the document info
 	\def\subtitle#1{\gdef\mysubtitle{#1}}
+	\def\mymaincolor#1{\gdef\maincolor{#1}}
 	\def\classname#1{\gdef\myclassname{#1}}
 	\def\formation#1{\gdef\myformation{#1}}
 	\def\parcours#1{\gdef\myparcours{#1}}
@@ -147,7 +148,7 @@
 	\def\tags#1{\gdef\MyTags{#1}}
 	\def\responsable#1{\gdef\responsable{#1}}
 	\ifthenelse{\isempty{\sectiontitlecolor#1}}{TextColor}{\def\sectiontitlecolor#1{\gdef\sectiontitlecolor{#1}}}
-\newcommand{\SectionTitleColor}{VertDepartementGeo}
+\newcommand{\SectionTitleColor}{\maincolor}
 
 % hyperlinks
 	\RequirePackage[
@@ -246,7 +247,7 @@
 
 
 % custom table of contents
-	\newcommand{\tocName}{Sommaire}									% define TOC header
+	%\newcommand{\tocName}{Sommaire}									% define TOC header
 	\addto\captionsfrench{\renewcommand{\contentsname}{\color{TextColor}\tocName}}	% change TOC header
 
 % custom list of figures
