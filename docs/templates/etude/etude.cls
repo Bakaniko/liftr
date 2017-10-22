@@ -123,14 +123,14 @@
 
 
 % colors
-	\definecolor{DarkColor}{gray}{0.75}
-	\definecolor{LightColor}{gray}{0.9}
-	\definecolor{LightGrey}{rgb}{0.96,0.96,0.96}
-	\definecolor{DarkGrey}{rgb}{0.83,0.83,0.83}
-	\definecolor{BaseColor}{rgb}{0.55,0.70,0.06}%{0.64,0.69,0.31}
-	\definecolor{TextColor}{rgb}{0.44,0.49,0.11}
-	\definecolor{VertDepartementGeo}{rgb}{0.55,0.70,0.06}
-	\definecolor{jaune}{rgb}{0.92,0.90,0.30}
+	%\definecolor{DarkColor}{gray}{0.75}
+	%\definecolor{LightColor}{gray}{0.9}
+	%\definecolor{LightGrey}{rgb}{0.96,0.96,0.96}
+	%\definecolor{DarkGrey}{rgb}{0.83,0.83,0.83}
+	%\definecolor{BaseColor}{rgb}{0.55,0.70,0.06}%{0.64,0.69,0.31}
+	%\definecolor{TextColor}{rgb}{0.44,0.49,0.11}
+	%\definecolor{VertDepartementGeo}{rgb}{0.55,0.70,0.06}
+	%\definecolor{jaune}{rgb}{0.92,0.90,0.30}
 
 
 
@@ -138,6 +138,7 @@
 % macros allowing to set the document info
 	\def\subtitle#1{\gdef\mysubtitle{#1}}
 	\def\mymaincolor#1{\gdef\maincolor{#1}}
+	\def\mysecondcolor#1{\gdef\secondcolor{#1}}
 	\def\classname#1{\gdef\myclassname{#1}}
 	\def\formation#1{\gdef\myformation{#1}}
 	\def\parcours#1{\gdef\myparcours{#1}}
@@ -249,19 +250,19 @@
 	%\addto\captionsfrench{\renewcommand{\contentsname}{\color{TextColor}\tocName}}	% change TOC header
 
 % custom list of figures
-	\newcommand{\lofName}{Liste des figures}						% define LOF header
-%	\renewcommand{\listfigurename}{\lofName}						% change LOF header (1)
-	\addto\captionsfrench{\renewcommand{\listfigurename}{\color{TextColor}\lofName}}	% change LOF header (2)
+	\newcommand{\lofName}{List of Figures}						% define LOF header
+	\renewcommand{\listfigurename}{\lofName}						% change LOF header (1)
+	\addto\captionsfrench{\renewcommand{\listfigurename}{\color{\maincolor}\lofName}}	% change LOF header (2)
 
 
 % custom list of tables
-	\newcommand{\lotName}{Liste des tables}							% define LOT header
-%	\renewcommand{\listtablename}{\lotName}							% change LOT header (1)
-	\addto\captionsfrench{\renewcommand{\listtablename}{\color{TextColor}\lotName}}	% change LOT header (2)
+	\newcommand{\lotName}{List of Tables}							% define LOT header
+	\renewcommand{\listtablename}{\lotName}							% change LOT header (1)
+	\addto\captionsfrench{\renewcommand{\listtablename}{\color{\maincolor}\lotName}}	% change LOT header (2)
 
 
 %% custom section
-	\newcommand{\merci}{Remerciements}							% define LOT header
+	%\newcommand{\merci}{Remerciements}							% define LOT header
 %%	\renewcommand{\listtablename}{\lotName}							% change LOT header (1)
 %	\addto\captionsfrench{\merci}	% change LOT header (2)
 %
@@ -311,7 +312,7 @@
 
 		% draw title page
 		\phantomsection
-		\addcontentsline{toc}{section}{Titre}	% add the title page in the TOC (yes! for PDF bookmark)
+		\addcontentsline{toc}{section}{Title}	% add the title page in the TOC (yes! for PDF bookmark)
 		\begin{titlepage}
 			\begin{tikzpicture}[remember picture,overlay]
 				% vertical lines
@@ -321,7 +322,7 @@
 						%% remplissage
 						\fill[fill=LightGrey]  (0cm,19.2cm) rectangle(21cm,29.7cm);
 						\fill[fill=DarkGrey] (0cm,0cm) rectangle(21cm,26.2cm);
-						\ifthenelse{\isempty{\chargeDeCours}}{\fill[fill=red] (0cm,1.5cm) rectangle(21cm,3.5cm);}{\fill[fill=jaune] (0cm,1.5cm) rectangle(21cm,4cm);}
+						\fill[fill=\secondcolor] (0cm,1.5cm) rectangle(21cm,4cm);
 						%\fill[fill=jaune] (0cm,1.5cm) rectangle(21cm,4cm);
 						%\fill[fill=BaseColor] (1cm,0cm) rectangle(5.2cm,25.2cm);
 						\fill[fill=\maincolor] (1cm,0cm) rectangle(5.2cm,29.7cm);

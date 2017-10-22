@@ -1,6 +1,6 @@
 ---
 title: "liftr"
-subtitle: "with custom french template"
+subtitle: "with custom (french) template"
 author: 
   - "Nicolas Roelandt"
 classname: "Custom project"
@@ -28,8 +28,9 @@ output:
 mainfont: Linux Libertine O
 sansfont: Linux Biolinum O
 maincolor: rstudioblue
+#secondcolor: bleuciel
 fontsize: 11pt
-lang: fr
+#lang: fr
 #tocname: "Sommaire"
 liftr:
   from: "rocker/tidyverse:latest"
@@ -86,7 +87,7 @@ An ionocraft[^ionocraft] or ion-propelled aircraft (commonly known as a lifter o
 
 
 
-# code
+# Code
 
 ```{python}
 import sys
@@ -94,7 +95,7 @@ import sys
 print sys.version
 ```
 
-# r code
+# R code
 
 
 
