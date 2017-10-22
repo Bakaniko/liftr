@@ -1,7 +1,7 @@
-container_name: liftr_container_914da42e_8272_4189_83a3_d5b4c34cddab
+container_name: liftr_container_b315a26b_9c6d_44b1_8950_658910ec8ee8
 image_name: essai_templates
 docker_build_cmd: docker build --no-cache=false --rm=true  -t="essai_templates" /home/niko/Rstuff/liftr/docs
-docker_run_cmd: docker run --rm  --name "liftr_container_914da42e_8272_4189_83a3_d5b4c34cddab"
+docker_run_cmd: docker run --rm  --name "liftr_container_b315a26b_9c6d_44b1_8950_658910ec8ee8"
   -u `id -u $USER` -v "/home/niko/Rstuff/liftr/docs:/liftrroot/" essai_templates Rscript
   -e "library('knitr');library('rmarkdown');library('shiny');setwd('/liftrroot/');render(input
   = 'essai_templates.Rmd')"

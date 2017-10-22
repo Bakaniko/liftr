@@ -248,7 +248,7 @@
 
 % custom table of contents
 	%\newcommand{\tocName}{Sommaire}									% define TOC header
-	\addto\captionsfrench{\renewcommand{\contentsname}{\color{TextColor}\tocName}}	% change TOC header
+	%\addto\captionsfrench{\renewcommand{\contentsname}{\color{TextColor}\tocName}}	% change TOC header
 
 % custom list of figures
 	\newcommand{\lofName}{Liste des figures}						% define LOF header
@@ -326,15 +326,14 @@
 						\ifthenelse{\isempty{\chargeDeCours}}{\fill[fill=red] (0cm,1.5cm) rectangle(21cm,3.5cm);}{\fill[fill=jaune] (0cm,1.5cm) rectangle(21cm,4cm);}
 						%\fill[fill=jaune] (0cm,1.5cm) rectangle(21cm,4cm);
 						%\fill[fill=BaseColor] (1cm,0cm) rectangle(5.2cm,25.2cm);
-						\fill[fill=BaseColor] (1cm,0cm) rectangle(5.2cm,29.7cm);
+						\fill[fill=\maincolor] (1cm,0cm) rectangle(5.2cm,29.7cm);
 
 						%%images
 
-							% LOGO P8
- 						%\pgftext[x=1cm,y=25.4cm,bottom,left]{\includegraphics[width=4.2cm]{templates/images/logop8.png}};
- 						\pgftext[x=1.1cm,y=26.4cm,bottom,left]{\includegraphics[width=4.0cm]{templates/images/logo_p8_blanc.png}};
+							% LOGO
+ 							\pgftext[x=1.1cm,y=26.4cm,bottom,left]{\includegraphics[width=4.0cm]{/images/logo.png}};
 
- 							% image de couverture
+ 							% Cover image
 							\pgftext[x=18.5cm,y=6.5cm,bottom,right]{\includegraphics[width=9cm]{templates/images/couv.JPG}};
  							%\pgftext[x=18.5cm,y=6.5cm,bottom,right]{\includegraphics[width=9cm]{\imageDeCouverture}};
 
@@ -350,9 +349,9 @@
  						\pgftext[x=5.5cm,y=22.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{phv}\selectfont{}\textbf{UE} \myclassname}}};
 
  						%% Titre
- 						\pgftext[x=3.5cm,y=21.0cm,bottom,left]{\scalebox{0.77}[1]{\fontsize{25}{30}{\fontfamily{phv}\selectfont{}\textbf{\textcolor{white}{>{}>{}>}\hspace{1cm}\textcolor{BaseColor}{\parbox{19cm}{\raggedright\MyTitle}}}}}};
+ 						\pgftext[x=3.5cm,y=21.0cm,bottom,left]{\scalebox{0.77}[1]{\fontsize{25}{30}{\fontfamily{phv}\selectfont{}\textbf{\textcolor{white}{>{}>{}>}\hspace{1cm}\textcolor{\maincolor}{\parbox{19cm}{\raggedright\MyTitle}}}}}};
 						%% Sous-titre
- 						\pgftext[x=5.5cm,y=20.5cm,bottom,left]{\scalebox{0.77}[1]{\fontsize{20}{20}{\fontfamily{phv}\selectfont{}\textbf{\textcolor{BaseColor}{\raggedright \mysubtitle }}}}};
+ 						\pgftext[x=5.5cm,y=20.5cm,bottom,left]{\scalebox{0.77}[1]{\fontsize{20}{20}{\fontfamily{phv}\selectfont{}\textbf{\textcolor{\maincolor}{\raggedright \mysubtitle }}}}};
 
  						%\pgftext[x=3.5cm,y=19.5cm,bottom,left]{\scalebox{0.77}[1]{\fontsize{30}{30}{\fontfamily{phv}\selectfont{}\textbf{\textcolor{white}{>{}>{}>}\hspace{0.7cm}\textcolor{BaseColor}{\parbox{19cm}{\raggedright\MyTitle}}}}}};
 

@@ -118,7 +118,7 @@ The example is from: https://github.com/tidyverse/ggplot2.
 
 
 
-```{r fig.cap="Engine displacement and Consumption"}
+```{r fig.cap="Engine displacement and fuel consumption"}
 library("ggplot2")
 
 ggplot(mpg, aes(displ, hwy, colour = class)) + 
