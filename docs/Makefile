@@ -18,10 +18,12 @@ pdf: ## make the pdf  & clean after
 	make clean
 
 
-clean: ## clean liftr files
+clean: ## clean liftr files & docker images
 	rm -f *.tex
 	rm -f Dockerfile
 	rm -f *.yml
+	docker rmi document
+	docker rmi $(docker images -f dangling=true -q)
 
 mrproper: ## clean liftr files && pdfs files
 	make clean
