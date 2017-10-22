@@ -331,33 +331,39 @@
 						%%images
 
 							% LOGO
- 							\pgftext[x=1.1cm,y=26.4cm,bottom,left]{\includegraphics[width=4.0cm]{/images/logo.png}};
+ 						  \pgftext[x=1.1cm,y=26.4cm,bottom,left]{\includegraphics[width=4.0cm]{/images/logo.png}};
 
  							% Cover image
 							\pgftext[x=18.5cm,y=6.5cm,bottom,right]{\includegraphics[width=9cm]{templates/images/couv.JPG}};
  							%\pgftext[x=18.5cm,y=6.5cm,bottom,right]{\includegraphics[width=9cm]{\imageDeCouverture}};
 
- 						%% Departement
- 						\pgftext[x=1.1cm,y=25.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][l]{\ugg{\textbf{DEPARTEMENT}}}}}};
- 						\pgftext[x=1.1cm,y=25cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{\ugg{\textbf{{DE}}}}}}};
- 						\pgftext[x=1.1cm,y=24.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][l]{\ugg{\textbf{GEOGRAPHIE}}}}}};
+ 						%% Departement / under logo text (not working :( )
+ 						%\pgftext[x=1.1cm,y=25.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][l]{\ugg{\textbf{DEPARTEMENT}}}}}};
+ 						%\pgftext[x=1.1cm,y=25cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{\ugg{\textbf{{DE}}}}}}};
+ 						%\pgftext[x=1.1cm,y=24.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][l]{\ugg{\textbf{GEOGRAPHIE}}}}}};
+
+ 						%\pgftext[x=1.1cm,y=25.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{\ugg{\textbf{A}}}}}};
+ 						%\pgftext[x=1.1cm,y=24.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{\ugg{\textbf{{RSTUDIO}}}}}}};
+ 						%\pgftext[x=1.1cm,y=24.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{\ugg{\textbf{ADDIN}}}}}};
 
  						%% intitulé formation
  						\pgftext[x=1.1cm,y=24.2cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][l]{\ugg{\textbf{}}}}}};
  						\pgftext[x=5.5cm,y=23.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{phv}\selectfont{}\textbf{\myformation}}}};
  						\pgftext[x=5.5cm,y=23.0cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{phv}\selectfont{}\textbf{\myparcours}}}};
- 						\pgftext[x=5.5cm,y=22.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{phv}\selectfont{}\textbf{UE} \myclassname}}};
+ 						%\pgftext[x=5.5cm,y=22.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{phv}\selectfont{}\textbf{UE} \myclassname}}};
+ 						\pgftext[x=5.5cm,y=22.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{phv}\selectfont{} \myclassname}}};
 
  						%% Titre
- 						\pgftext[x=3.5cm,y=21.0cm,bottom,left]{\scalebox{0.77}[1]{\fontsize{25}{30}{\fontfamily{phv}\selectfont{}\textbf{\textcolor{white}{>{}>{}>}\hspace{1cm}\textcolor{\maincolor}{\parbox{19cm}{\raggedright\MyTitle}}}}}};
+ 						\pgftext[x=3.5cm,y=21.0cm,bottom,left]{\scalebox{0.77}[1]{\fontsize{25}{30}{\fontfamily{phv}\selectfont{}\textbf{\textcolor{white}{>{}>{}>}\hspace{0.6cm}\textcolor{\maincolor}{\parbox{19cm}{\raggedright\MyTitle}}}}}};
 						%% Sous-titre
- 						\pgftext[x=5.5cm,y=20.5cm,bottom,left]{\scalebox{0.77}[1]{\fontsize{20}{20}{\fontfamily{phv}\selectfont{}\textbf{\textcolor{\maincolor}{\raggedright \mysubtitle }}}}};
+ 						\pgftext[x=5.5cm,y=20.3cm,bottom,left]{\scalebox{0.77}[1]{\fontsize{20}{20}{\fontfamily{phv}\selectfont{}\textbf{\textcolor{\maincolor}{\raggedright \mysubtitle }}}}};
 
  						%\pgftext[x=3.5cm,y=19.5cm,bottom,left]{\scalebox{0.77}[1]{\fontsize{30}{30}{\fontfamily{phv}\selectfont{}\textbf{\textcolor{white}{>{}>{}>}\hspace{0.7cm}\textcolor{BaseColor}{\parbox{19cm}{\raggedright\MyTitle}}}}}};
 
-						%% Auteur
- 						\pgftext[x=5.5cm,y=19.5cm,bottom,left]{\scalebox{0.77}[1]{\fontsize{15}{15}{\fontfamily{phv}\selectfont{}\textcolor{black}{\MyAuthor}}}};
- 						\pgftext[x=5.5cm,y=19.0cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{phv}\selectfont{}\textbf{\today}}}};
+						%% Author
+ 						\pgftext[x=5.5cm,y=19.8cm,bottom,left]{\scalebox{0.77}[1]{\fontsize{15}{15}{\fontfamily{phv}\selectfont{}\textcolor{black}{\MyAuthor}}}};
+ 						% date
+ 						\pgftext[x=5.5cm,y=19.3cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{phv}\selectfont{}\textbf{\today}}}};
 
 
   \ifthenelse{\isundefined{\chargeDeCours}}{}{\pgftext[x=5.5cm,y=3.1cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{18}{18}{\fontfamily{phv}\selectfont{}\textbf{\chargeDeCours}}}};}

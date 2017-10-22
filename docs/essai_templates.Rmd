@@ -1,12 +1,12 @@
 ---
 title: "liftr"
-subtitle: "With custom french template"
+subtitle: "with custom french template"
 author: 
-  - "Nan Xiao, Nicolas Roelandt"
+  - "Nicolas Roelandt"
 classname: "Custom project"
 formation: "Master degree"
-parcours: 'mutatis mutandis.'
-responsable: "Pr.Charles Xavier"
+parcours: 'Mutatis mutandis.'
+responsable: "Inspired by Nan Xiao liftr package"
 
 date: "`r Sys.Date()`"
 output:
