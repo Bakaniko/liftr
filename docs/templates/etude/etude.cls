@@ -330,12 +330,11 @@
 
 						%%images
 
-							% LOGO
- 						  \pgftext[x=1.1cm,y=26.4cm,bottom,left]{\includegraphics[width=4.0cm]{/images/logo.png}};
+							% Compagny Logo
+ 						  \pgftext[x=1.1cm,y=26.4cm,bottom,left]{\includegraphics[width=4cm]{/images/secondlogo.png}};
 
- 							% Cover image
-							\pgftext[x=18.5cm,y=6.5cm,bottom,right]{\includegraphics[width=9cm]{templates/images/couv.JPG}};
- 							%\pgftext[x=18.5cm,y=6.5cm,bottom,right]{\includegraphics[width=9cm]{\imageDeCouverture}};
+ 							% Cover image / project logo
+							\pgftext[x=18.5cm,y=6.5cm,bottom,right]{\includegraphics[width=9cm]{/images/mainlogo.png}};
 
  						%% Departement / under logo text (not working :( )
  						\pgftext[x=1.1cm,y=25.6cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{18}{16}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{A}}}};

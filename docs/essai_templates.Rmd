@@ -11,11 +11,10 @@ responsable: "Inspired by Nan Xiao liftr package"
 date: "`r Sys.Date()`"
 output:
   rmarkdown::pdf_document:
-    #template: /data/article.tex
     template: /data/etude/etude.tex
     toc: true
     number_sections: true
-    keep_tex : true
+    #keep_tex : true
     latex_engine: xelatex
     fig_width: 7
     fig_height: 6
