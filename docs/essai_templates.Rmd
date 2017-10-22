@@ -6,7 +6,8 @@ author:
 classname: "Custom project"
 formation: "Master degree"
 parcours: 'Mutatis mutandis.'
-responsable: "Inspired by Nan Xiao liftr package"
+notesA: "Inspired by Nan Xiao liftr package"
+notesB: "Please note that project is using RStudio software but is not a RStudio project"
 
 date: "`r Sys.Date()`"
 output:
@@ -45,6 +46,7 @@ liftr:
   cran:
     - nycflights13
   include: "DockerfileSnippet"
+  
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

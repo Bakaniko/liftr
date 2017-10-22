@@ -141,12 +141,10 @@
 	\def\classname#1{\gdef\myclassname{#1}}
 	\def\formation#1{\gdef\myformation{#1}}
 	\def\parcours#1{\gdef\myparcours{#1}}
-	\def\responsable#1{\gdef\responsable{#1}}
-	\ifthenelse{\isempty{\chargedecours#1}}{}{\def\chargeDeCours#1{\gdef\chargeDeCours{#1}}}
-	\def\imageDeCouverture#1{\gdef\imageDeCouverture{#1}}
 	\def\subject#1{\gdef\MySubject{#1}}
 	\def\tags#1{\gdef\MyTags{#1}}
-	\def\responsable#1{\gdef\responsable{#1}}
+	\def\note1#1{\gdef\note1{#1}}
+	\def\note2#1{\gdef\note2{#1}}
 	\ifthenelse{\isempty{\sectiontitlecolor#1}}{TextColor}{\def\sectiontitlecolor#1{\gdef\sectiontitlecolor{#1}}}
 \newcommand{\SectionTitleColor}{\maincolor}
 
@@ -361,19 +359,19 @@
  						\pgftext[x=5.5cm,y=19.3cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{phv}\selectfont{}\textbf{\today}}}};
 
 
-  \ifthenelse{\isundefined{\chargeDeCours}}{}{\pgftext[x=5.5cm,y=3.1cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{18}{18}{\fontfamily{phv}\selectfont{}\textbf{\chargeDeCours}}}};}
- %\pgftext[x=5.5cm,y=3.4cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{18}{18}{\fontfamily{phv}\selectfont{}\textbf{Chargé de cours : Malvina Dupays (Magellium)}}}};
- \pgftext[x=5.5cm,y=2.1cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{18}{18}{\fontfamily{phv}\selectfont{}\textbf{\responsable}}}};
+            %% Notes
+            \pgftext[x=5.5cm,y=2.6cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{18}{18}{\fontfamily{phv}\selectfont{}\textbf{\notesA}}}};
+            \pgftext[x=5.5cm,y=2.1cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{18}{18}{\fontfamily{phv}\selectfont{}\textbf{\notesB}}}};
 
  						%% coordonnées Master
 
- 						\pgftext[x=1.1cm,y=4.2cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{RStudio}}}};
- 						\pgftext[x=1.1cm,y=3.7cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{250 Northern Ave}}}};
- 						\pgftext[x=1.1cm,y=3.4cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{Boston}}}};
- 						\pgftext[x=1.1cm,y=3.0cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{MA 02210}}}};
- 						\pgftext[x=1.1cm,y=2.6cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{USA}}}};
- 						\pgftext[x=1.1cm,y=1.9cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{844-448-1212}}}};
- 						\pgftext[x=1.1cm,y=1.4cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{info@rstudio.com}}}};
+ 						\pgftext[x=1.1cm,y=4.2cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{COMPAGNY}}}};
+ 						\pgftext[x=1.1cm,y=3.8cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{STREET}}}};
+ 						\pgftext[x=1.1cm,y=3.4cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{CITY}}}};
+ 						\pgftext[x=1.1cm,y=3.0cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{ZIPCODE}}}};
+ 						\pgftext[x=1.1cm,y=2.6cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{COUNTRY}}}};
+ 						\pgftext[x=1.1cm,y=1.9cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{PHONE NUMBER}}}};
+ 						\pgftext[x=1.1cm,y=1.4cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{EMAIL}}}};
 
 
 
