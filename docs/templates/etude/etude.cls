@@ -338,13 +338,9 @@
  							%\pgftext[x=18.5cm,y=6.5cm,bottom,right]{\includegraphics[width=9cm]{\imageDeCouverture}};
 
  						%% Departement / under logo text (not working :( )
- 						%\pgftext[x=1.1cm,y=25.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][l]{\ugg{\textbf{DEPARTEMENT}}}}}};
- 						%\pgftext[x=1.1cm,y=25cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{\ugg{\textbf{{DE}}}}}}};
- 						%\pgftext[x=1.1cm,y=24.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][l]{\ugg{\textbf{GEOGRAPHIE}}}}}};
-
- 						%\pgftext[x=1.1cm,y=25.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{\ugg{\textbf{A}}}}}};
- 						%\pgftext[x=1.1cm,y=24.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{13}{13}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{\ugg{\textbf{{RSTUDIO}}}}}}};
- 						%\pgftext[x=1.1cm,y=24.5cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{\ugg{\textbf{ADDIN}}}}}};
+ 						\pgftext[x=1.1cm,y=25.6cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{18}{16}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{A}}}};
+ 						\pgftext[x=1.1cm,y=25.1cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{18}{16}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{RStudio}}}};
+ 						\pgftext[x=1.1cm,y=24.6cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{18}{16}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{addin}}}};
 
  						%% intitulé formation
  						\pgftext[x=1.1cm,y=24.2cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][l]{\ugg{\textbf{}}}}}};
@@ -371,14 +367,16 @@
  \pgftext[x=5.5cm,y=2.1cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{18}{18}{\fontfamily{phv}\selectfont{}\textbf{\responsable}}}};
 
  						%% coordonnées Master
- 						\pgftext[x=1.1cm,y=4.7cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{Université Paris 8}}}};
- 						\pgftext[x=1.1cm,y=4.2cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{Département de géographie}}}};
- 						\pgftext[x=1.1cm,y=3.7cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{1er étage Bâtiment D}}}};
- 						\pgftext[x=1.1cm,y=3.4cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{2, rue de la Liberté}}}};
- 						\pgftext[x=1.1cm,y=3.0cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{93256 Saint-Denis Cedex}}}};
- 						\pgftext[x=1.1cm,y=2.6cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{France}}}};
- 						\pgftext[x=1.1cm,y=1.9cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{Tél. +33 (0)1 49 40 72 70}}}};
- 						\pgftext[x=1.1cm,y=1.4cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{http://www.geographie.univ-paris8.fr}}}};
+
+ 						\pgftext[x=1.1cm,y=4.2cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{RStudio}}}};
+ 						\pgftext[x=1.1cm,y=3.7cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{250 Northern Ave}}}};
+ 						\pgftext[x=1.1cm,y=3.4cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{Boston}}}};
+ 						\pgftext[x=1.1cm,y=3.0cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{MA 02210}}}};
+ 						\pgftext[x=1.1cm,y=2.6cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{USA}}}};
+ 						\pgftext[x=1.1cm,y=1.9cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{844-448-1212}}}};
+ 						\pgftext[x=1.1cm,y=1.4cm,bottom,left]{\scalebox{0.6}[1]{\fontsize{12}{12}{\fontfamily{ptm}\selectfont{}\makebox[6.7cm][c]{info@rstudio.com}}}};
+
+
 
 
 					\end{tikzpicture}
