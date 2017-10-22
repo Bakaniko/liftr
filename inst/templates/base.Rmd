@@ -29,5 +29,4 @@ RUN Rscript -e "install.packages(c(`r liftr_factory`), repos = 'https://cran.rst
 
 `r liftr_include`
 
-RUN mkdir /liftrroot/
 WORKDIR /liftrroot/

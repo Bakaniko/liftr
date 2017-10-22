@@ -1,0 +1,5 @@
+COPY templates/ /data/
+RUN ls /data/
+
+COPY images/ /images/
+RUN ls /images/

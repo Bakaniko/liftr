@@ -1,0 +1,171 @@
+---
+title: "liftr"
+subtitle: "With custom french template"
+author: 
+  - "Nan Xiao, Nicolas Roelandt"
+classname: "Custom project"
+formation: "Master degree"
+parcours: 'mutatis mutandis.'
+responsable: "Pr.Charles Xavier"
+
+date: "`r Sys.Date()`"
+output:
+  rmarkdown::pdf_document:
+    #template: /data/article.tex
+    template: /data/etude/etude.tex
+    toc: true
+    number_sections: true
+    keep_tex : true
+    latex_engine: xelatex
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    #includes:
+    #  in_header: /data/templates/chunks/header.tex
+    #  before_body: /data/templates/chunks/doc_prefix.tex
+    #  after_body: /data/templates/chunks/doc_suffix.tex
+
+mainfont: Linux Libertine O
+sansfont: Linux Biolinum O
+maincolor: rstudioblue
+fontsize: 11pt
+lang: fr
+liftr:
+  from: "rocker/tidyverse:latest"
+  maintainer: "Nan Xiao"
+  email: "me@nanx.me"
+  pandoc: false
+  texlive: true
+  sysdeps:
+    - texlive-xetex
+    - texlive-luatex
+    - texlive-latex-recommended
+    - fonts-linuxlibertine
+    - texlive-lang-french
+  cran:
+    - nycflights13
+  include: "DockerfileSnippet"
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knit_hooks$set(document = function(x) {sub('\\usepackage[]{color}', '\\usepackage{xcolor}', x, fixed = TRUE)})
+
+```
+\clearpage
+
+pdf_document customisation:
+
+http://rmarkdown.rstudio.com/pdf_document_format.html
+
+
+# section
+## subsection
+### subsubsection
+#### paragraph
+##### subparagraph
+###### subsubparagraph (What ? You wanted more ?)
+
+An ionocraft[^ionocraft] or ion-propelled aircraft (commonly known as a lifter or hexalifter) is a device that uses an electrical electrohydrodynamic (EHD) phenomenon to produce thrust in the air without requiring any combustion or moving parts.
+
+[^ionocraft]:
+    [https://en.wikipedia.org/wiki/Ionocraft](https://en.wikipedia.org/wiki/Ionocraft)
+
+
+
+
+
+
+# Images and footnotes
+
+![Flying\ Lifter\ v2\label{/FlyingLifterv2}[^source]](/images/FlyingLifterv2.png){ width=489px height=346px}
+
+[^source]:
+  Anonymous59 CC-BY-SA Creative Commons [https://commons.wikimedia.org/wiki/File:FlyingLifterv2.png](https://commons.wikimedia.org/wiki/File:FlyingLifterv2.png)
+
+
+
+# code
+
+```{python}
+import sys
+
+print sys.version
+```
+
+# r code
+
+
+
+## tibble
+The examples are from: https://github.com/tidyverse/tibble.
+
+```{r}
+library("tibble")
+as_tibble(iris)
+
+tibble(x = 1:5, y = 1, z = x ^ 2 + y)
+
+tribble(
+  ~x, ~y,  ~z,
+  "a", 2,  3.6,
+  "b", 1,  8.5)
+```
+
+## ggplot2
+
+The example is from: https://github.com/tidyverse/ggplot2.
+
+
+
+```{r fig.cap="Engine displacement and Consumption"}
+library("ggplot2")
+
+ggplot(mpg, aes(displ, hwy, colour = class)) + 
+  geom_point()
+```
+
+## purrr
+
+The example is from: https://github.com/tidyverse/purrr.
+
+```{r}
+library("purrr")
+
+mtcars %>%
+  split(.$cyl) %>% # from base R
+  map(~ lm(mpg ~ wt, data = .)) %>%
+  map(summary) %>%
+  map_dbl("r.squared")
+```
+
+## dplyr
+
+The examples are from: https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html.
+
+```{r}
+library("dplyr")
+library("nycflights13")
+
+filter(flights, month == 1, day == 1)
+
+slice(flights, 1:10)
+
+arrange(flights, year, month, day)
+
+select(flights, year, month, day)
+
+mutate(flights,
+  gain = arr_delay - dep_delay,
+  speed = distance / air_time * 60)
+
+summarise(flights,
+  delay = mean(dep_delay, na.rm = TRUE))
+```
+
+# Session information
+
+The R session information for compiling this document is shown below.
+
+```{r session}
+sessionInfo()
+```
